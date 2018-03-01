@@ -1,15 +1,12 @@
-# head-meta-tags
+var express = require('express');
+var app = express();
+var headMetaTags = require('../index.js');
 
-## Configuration
-
-Here is an example with all possible tags configured. To exclude a tag simply ommit it from the configuration.
-
-```js
 var config = {
     // Traditional
     title: 'Hello World',
-    description: 'A simple greeting to the world.',
     img: { src: '/path/to/image' },
+    description: 'A simple greeting to the world.',
     keywords: 'key, words, keywords',
     siteName: 'Example',
     url: 'https://example.com/articles/11',
@@ -17,7 +14,6 @@ var config = {
 
     // Twitter
     twitter: {
-        //Requires title, description, image to be set
         type: 'summary',
         authorHandle: '@authorHandle',
         pubHandle: '@pubHandle'
@@ -25,14 +21,19 @@ var config = {
 
     // OpenGraph/Facebook
     og: {
-        //Requires title, description, image to be set
         type: 'article'
     }
 };
-```
 
-## Usage
-
-```js
 app.use(headMetaTags(config));
-```
+
+app.get('/', function(req, res){
+    res.send(res.tags);
+});
+
+var server = app.listen('3000',function(){
+    var port = server.address().port;
+    console.log('Test app running at port %s', port);
+});
+
+module.exports = server;

@@ -1,0 +1,17 @@
+{
+  "name": "head-meta-tags",
+  "version": "0.0.1",
+  "description": "Simplified management of a document's meta data",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd tests && mocha -R spec spec.js"
+  },
+  "author": "Jason Snider",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "4.16.2",
+    "mocha": "^3.5.3",
+    "should": "^13.2.1",
+    "supertest": "^3.0.0"
+  }
+}
