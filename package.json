@@ -8,6 +8,11 @@
   },
   "author": "Jason Snider",
   "license": "MIT",
+  "repository" :
+  { 
+    "type" : "git",
+    "url" : "https://github.com/jasonsnider/head-meta-tags"
+  },
   "devDependencies": {
     "express": "4.16.2",
     "mocha": "^3.5.3",
