@@ -1,5 +1,7 @@
 # head-meta-tags
 
+[![Build Status](https://travis-ci.org/jasonsnider/head-meta-tags.svg?branch=master)](https://travis-ci.org/jasonsnider/head-meta-tags)
+
 Provides a default configuration of social and traditional html meta tags that can be selectively overridden on a per route basis. Works by replacing ```res.render()``` with a JSON object within the route.
 
 ## Configuration
