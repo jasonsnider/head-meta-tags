@@ -1,6 +1,6 @@
 {
   "name": "head-meta-tags",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Simplified management of a document's meta data",
   "main": "index.js",
   "scripts": {
